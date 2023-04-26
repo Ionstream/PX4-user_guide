@@ -10,3 +10,6 @@ Compatible WiFi Telemetry modules include:
 * [ESP8266 WiFi Module](../telemetry/esp8266_wifi_module.md)
 * [ESP32 WiFi Module](../telemetry/esp32_wifi_module.md)
 * [3DR Telemetry Wifi](../telemetry/3dr_telemetry_wifi.md) (Discontinued)
+
+# Network settings for VM (VirtualBox) GCS usage
+By default, VirtualBox uses "NAT" for connecting the instance to the host machine's network, which does not reliably receive UDP broadcasts. Change VirtualBox's network settings to "Bridged Adapter" mode to allow communications between vehicle and GCS.
